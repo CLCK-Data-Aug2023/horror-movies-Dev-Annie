@@ -1,6 +1,9 @@
 headers on
 
-SELECT id AS Movie_ID, name AS Movie_Title, imdb_rating AS Rating
+.mode csv
+
+
+SELECT id AS Movie_ID, name AS Movie_Title, imdb_rating AS rating
 FROM movies
 WHERE genre = 'horror' AND year <= 1985
 ORDER BY imdb_rating DESC
